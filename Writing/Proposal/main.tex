@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ top=25mm,
+ left=20mm,
+ right=20mm,
+ bottom=30mm,
+ }
+ 
+% \usepackage[backend=biber, style= ieee]{biblatex}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{listings}
+\usepackage[table]{xcolor}
+\usepackage{pgfgantt}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage[font=footnotesize]{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage[colorlinks]{hyperref}
+\hypersetup{citecolor=[HTML]{3CE1C6}, linkcolor=[HTML]{D9A6FF}}
+\usepackage[english]{babel}
+
+\addto\extrasenglish{
+    \def\sectionautorefname{Section}
+}
+
+\addto\extrasenglish{
+    \def\subsectionautorefname{Section}
+}
+
+% \addbibresource{references.bib}
+
+\definecolor{codeorange}{rgb}{0.9, 0.5, 0.2}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.8}
+\definecolor{codefushia}{rgb}{0.7,0,0.7}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codeorange},
+    keywordstyle=\color{codefushia},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \textbf{}
+        \vspace{3cm}
+        
+        \LARGE
+        \textbf{\textit{Compiling OpenQASM on a Neutral Atom Quantum Computer}}
+        
+        \vspace{1cm}
+        Thesis Proposal
+        
+        \vspace{0.7cm}
+        \textbf{Author: Xavier Spronken (i6225376)}
+        
+        \vspace{0.5cm}
+        \normalsize
+        \text{x.spronken@student.maastrichtuniversity.nl}
+        
+        \vspace{1cm}
+        \large
+        \textbf{Supervisor: Claire Blackman}
+        
+        \vspace{1cm}
+        \textbf{Word Count: }
+        
+        \vfill
+        
+        \begin{figure}[H]
+            \centering
+            \includegraphics{Images/msp-logo.jpeg}
+            \label{fig:msp-logo}
+        \end{figure}
+        
+        \vspace{0.5cm}
+        \textbf{Academic Year 2022-23}
+        
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+\input{Introduction}
+\input{Project_objective}
+\input{Methodology}
+\input{Project_impact}
+\input{Ethical_considerations}
+
+% \newpage
+% \printbibliography
+
+\end{document}

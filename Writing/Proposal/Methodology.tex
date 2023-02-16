@@ -1,0 +1,29 @@
+\section{Methodology}
+\label{sec:methods}
+
+Project Impact lorem ipsum.
+
+\begin{figure}[H]
+    \begin{ganttchart}[
+    hgrid=true, 
+    vgrid,
+    bar height = 0.5,
+    y unit chart = 0.6cm,
+    expand chart = \textwidth,
+    ]{1}{18}
+        \gantttitle{Thesis Timeline}{18} \\
+        \gantttitlelist{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}{1} \\
+        \ganttgroup[group/.append style={fill=black}]{Write Proposal}{1}{4} \\
+        \ganttmilestone{Proposal Deadline}{4} \\
+        \ganttbar[bar/.append style={fill=black}]{Literature Search}{1}{15} \\
+        \ganttgroup[group/.append style={fill=blue}]{Part1}{5}{11} \\
+        \ganttgroup[group/.append style={fill=red}]{Part 2}{10}{15} \\
+        \ganttgroup[group/.append style={fill=black}]{Write Thesis}{8}{18} \\
+        \ganttbar[bar/.append style={fill=black}]{Introduction \& Methods}{8}{15} \\
+        \ganttbar[bar/.append style={fill=black}]{Results \& Discussion}{14}{17}
+        \ganttnewline
+        \ganttmilestone{Thesis Deadline}{18}
+    \end{ganttchart}
+    \caption{Gantt chart of the thesis timeline}
+    \label{fig:timeline}    
+\end{figure}
