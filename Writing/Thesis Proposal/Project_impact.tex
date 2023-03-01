@@ -1,4 +1,14 @@
 \section{Project Impact}
 \label{sec:impact}
 
-Project Impact lorem ipsum.
+Considering all the different approaches to implementing quantum computing, OpenQASM's position as a hardware-agnostic language may set it up to be
+ a universal layer that all higher-level quantum software languages could translate to and work on any quantum computer. This would allow quantum algorithms, such as 
+ Grover's algorithm, to work on any quantum computer, as long as it was written in OpenQASM. However, for this to be the case OpenQASM compilers need to exist for all 
+ the different types of quantum computers. This isn't the case yet for neutral atom quantum computers, or at least there is no open-source version available to the public.
+ Thus this project aims to be the first open-source OpenQASM compiler for neutral atom quantum computers, more specifically Pasqal's device.
+
+\subsection{Ethical considerations}
+\label{sec:Impact ethics}
+The main ethical concern for this project is that, while the project would produce an open-source solution to compiling OpenQASM, the main beneficiary of this code would
+be Pasqal, a for-profit start-up. However, they seem to be committed to open-sourcing most of their code as is the case with Pulser. Thus a compiler such as this one would
+help develop Pasqal's quantum technology further, while also keeping a majority of the knowledge open to the public and competition.

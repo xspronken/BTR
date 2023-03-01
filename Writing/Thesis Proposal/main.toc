@@ -1,9 +1,14 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Neutral Atom Quantum Computers}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}OpenQASM: Universal "Quantum Code"}{2}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}QASM on NAQC}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.1}Compilation on Classical Computers}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Quantum Computers}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Pasqal's Neutral Atom Quantum Computer}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}QASM on NAQC}{2}{subsection.1.4}%
 \contentsline {section}{\numberline {2}Project Objective}{2}{section.2}%
 \contentsline {section}{\numberline {3}Methodology}{2}{section.3}%
-\contentsline {section}{\numberline {4}Project Impact}{2}{section.4}%
-\contentsline {section}{\numberline {5}Ethical Considerations}{3}{section.5}%
+\contentsline {subsection}{\numberline {3.1}Tools}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Approach}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Ethical considerations}{3}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Time planning}{3}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Project Impact}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Ethical considerations}{4}{subsection.4.1}%

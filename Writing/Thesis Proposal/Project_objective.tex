@@ -1,4 +1,9 @@
 \section{Project Objective}
 \label{sec:objective}
 
-Objective lorem ipsum.
+The objective of this thesis is to create a QASM compiler for Pasqal's neutral atom quantum computer. 
+This is achievable in four steps, the first is to parse the QASM code to retrieve the number of qubits 
+used and which gates are applied to them. Once the code has been parsed, a register of qubits has to be 
+created that satisfies the constraints imposed by the multi-qubit gates. Following the creation of the register 
+the gates can be translated into adequate optical pulses. 
+Finally, the compiled quantum circuit can be tested through simulation, or on a real quantum device if available.

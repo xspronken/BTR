@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.16)  16 FEB 2023 12:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.16)  1 MAR 2023 21:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/xavier/Documents/BTR/Writing/Proposal/main.tex
-(/home/xavier/Documents/BTR/Writing/Proposal/main.tex
+**"/home/xavier/Documents/BTR/Writing/Thesis Proposal/main.tex"
+(/home/xavier/Documents/BTR/Writing/Thesis Proposal/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -793,7 +793,7 @@ LaTeX Info: Redefining \nameref on input line 70.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-<Images/msp-logo.jpeg, id=39, 151.56625pt x 154.5775pt>
+<Images/msp-logo.jpeg, id=59, 151.56625pt x 154.5775pt>
 File: Images/msp-logo.jpeg Graphic file (type jpg)
 <use Images/msp-logo.jpeg>
 Package pdftex.def Info: Images/msp-logo.jpeg  used on input line 100.
@@ -808,23 +808,23 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.112 \newpage
-               [1] (./Introduction.tex) (./Project_objective.tex) (./Methodology.tex) (./Project_impact.tex) (./Ethical_considerations.tex) [2] [3] (./main.aux)
+               [1] (./Introduction.tex) (./Project_objective.tex) (./Methodology.tex [2]) (./Project_impact.tex [3]) [4] [5] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D241BAF0A54AE6B3FB9521C8B818BCF5;1179.
+(rerunfilecheck)             Checksum: B8420E255F805A9B7279CB228F6F901D;1859.
  ) 
 Here is how much of TeX's memory you used:
- 26976 strings out of 480171
- 518287 string characters out of 5894489
- 814754 words of memory out of 5000000
- 44466 multiletter control sequences out of 15000+600000
+ 27112 strings out of 480171
+ 520689 string characters out of 5894489
+ 822984 words of memory out of 5000000
+ 44598 multiletter control sequences out of 15000+600000
  475799 words of font info for 50 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 99i,9n,94p,468b,935s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,10n,94p,477b,936s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (4 pages, 98464 bytes).
+Output written on main.pdf (6 pages, 109269 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 140 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 
