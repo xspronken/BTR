@@ -2,34 +2,57 @@
 \label{sec:intro}
 
 
-A brief intro to Quantum Computing and compilation
-\subsection{Compilation on Classical Computers}
-\label{sec:Classical Computing}
-Different hardware > different compiler
 
 \subsection{Quantum Computers}
 \label{sec:QC}
-Bloch sphere basic linear algebra + tensors.
-Quantum Gates
-Universal set
-Gate combinations
-QASM
-Algo example (appendix)
+While quantum computers can be used for analog computation or simulating quantum systems, %TODO cite 
+it is also possible to make them perform quantum information processing (QIP). The carriers of information in QIP are qubits. These differ from classical qubits
+in that they make use of quantum superposition. Thus a qubit's state (either $|1 \rangle$ or $|0 \rangle$) can only be known precisely upon measurement. Before this,
+the qubit is said to be in a superposition of both states, where the probability of measuring either one of those states is P($|1 \rangle$) + P($|0 \rangle$) = 1.
+Mathematicaly a qubit is represented as $ |a \rangle = \alpha|1 \rangle + \beta|0 \rangle =  \begin{bmatrix}
+    \alpha \\
+    \beta \\
+\end{bmatrix}$, where $\alpha^2 + \beta^2 = P(|1 \rangle) + P(|0 \rangle) = 1$
 
+
+  An intuitive method to view the state of a qubit before measuring is through the Bloch sphere. %TODO BLoch sphere image
+In this representation, the  $|1 \rangle$ state and $|0 \rangle$ state are respectively set to the "North Pole" and "South Pole" of the sphere. In addition to the 
+probability of getting either state upon measurement, the Bloch sphere shows the phase of the qubit thanks to the latitudinal direction of the arrow in the sphere.
+
+Before qubit measurement, it is possible to change the state of a qubit through so-called quantum logic gates, these are the quantum computing equivalents of logic 
+gates that make up classical electronic circuits. When applied to a qubit, a quantum gate will set it to a specific superposition of states. This corresponds to a 
+specific rotation of the arrow on the Bloch sphere. Since a gate corresponds to a rotation a does not place the qubit in a specific state, the resulting superposition
+depends both on the gate and the state of the qubit before the gate was applied. Some well-known quantum gates are the Pauli X Y and Z gates, each corresponding to a 
+rotation of 180 degrees around the x, y and z axes of the Bloch sphere. Gates are mathematically represented as matrices that can be applied to the qubit state vector.
+The Pauli X gate for example would be $\begin{bmatrix}
+    0 & 1\\
+    1 & 0\\
+\end{bmatrix}$
+
+Quantum gates can be applied to single or multiple qubits at the same time, in general, these are control gates, which will only apply a rotation to qubit 1 if qubit 2
+is already in a certain state. While there are multiple different types of gates, it is possible to create a universal set. This is a set of logic gates that can be
+combined to create any other gate. The set of arbitrary rotation gates $R_x(\theta), R_y(\theta), R_z(\theta)$, combined with a phase shift gate $P(\varphi)$ and a control-X 
+gate would be such a set.
+
+
+% QASM
+% Algo example (appendix)
+\subsection{QASM}
+\label{sec:Qasm}
 
 \subsection{Pasqal's Neutral Atom Quantum Computer}
 \label{sec:NAQC}
-Description
-hardware:
-- Register 
-- Pulses
-Single QUbit Q-Gate implementation.
-Bloch Sphere equation
+% Description
+% hardware:
+% - Register 
+% - Pulses
+% Single QUbit Q-Gate implementation.
+% Bloch Sphere equation
 
-Multi-Qubit Q-Gate
-- Rydberg Blockade radius
-- Control Z gate
+% Multi-Qubit Q-Gate
+% - Rydberg Blockade radius
+% - Control Z gate
 
 \subsection{QASM on NAQC}
 \label{sec:QASM_NAQC}
-Overview of what has been done and can be used to compile QASM on NAQC
+% Overview of what has been done and can be used to compile QASM on NAQC

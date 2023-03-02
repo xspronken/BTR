@@ -2,20 +2,19 @@
 \usepackage{geometry}
 \geometry{
  a4paper,
- total={170mm,257mm},
  top=25mm,
  left=20mm,
  right=20mm,
  bottom=30mm,
  }
  
-% \usepackage[backend=biber, style= ieee]{biblatex}
+ \usepackage[super]{natbib}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{mathtools}
-\usepackage{gensymb}
+\usepackage{textcomp, gensymb}
 \usepackage{listings}
 \usepackage[table]{xcolor}
 \usepackage{pgfgantt}
@@ -25,7 +24,7 @@
 \usepackage{subcaption}
 \usepackage{wrapfig}
 \usepackage[colorlinks]{hyperref}
-\hypersetup{citecolor=[HTML]{3CE1C6}, linkcolor=[HTML]{D9A6FF}}
+\hypersetup{citecolor=[HTML]{0000EE}, linkcolor=[HTML]{0000EE}}
 \usepackage[english]{babel}
 
 \addto\extrasenglish{
@@ -36,7 +35,7 @@
     \def\subsectionautorefname{Section}
 }
 
-% \addbibresource{references.bib}
+
 
 \definecolor{codeorange}{rgb}{0.9, 0.5, 0.2}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -116,8 +115,9 @@
 \input{Project_impact}
 
 
-% \newpage
-% \printbibliography
+\newpage
+\bibliographystyle{plain}
+\bibliography{BTR.bib} 
 
 \end{document}
 
