@@ -22,7 +22,7 @@ Some restrictions need to be taken into account regarding circuit simulation, no
 \subsection{Approach}
 \label{sec:Approach}
 To maximize the chances of producing a functional compiler by the end of the project, a specific approach has to be used. Instead of
- trying to make each step (Parsing, Optimizing, Translating, Simulating), a full compilation pipeline will be created for increasingly complex 
+ trying to make each step (Parsing, Mapping, Translating, Simulating), a full compilation pipeline will be created for increasingly complex 
  QASM algorithms. This means that the project will start by creating a simple parser, optimizer, translator and simulator which will work with
  one or two qubits and a small number of select single-qubit gates. As the project progresses, the pipeline will be modified to handle more complex algorithms, 
  which involve more qubits and multi-qubit gates. Once the compiler can handle multi-qubit gates, the work will shift to translating as many gates as possible 
