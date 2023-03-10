@@ -58,13 +58,14 @@ summarized in the Gantt chart below.
         \ganttgroup[group/.append style={fill=green}]{1. Single-qubit gate compiler}{5}{6} \\
         \ganttbar[bar/.append style={fill=green}]{1.1. Parsing and translation}{5}{5} \\
         \ganttbar[bar/.append style={fill=green}]{1.2. Simulation and testing}{6}{6} \\
-        \ganttgroup[group/.append style={fill=red}]{2. Multi-qubit gate compiler}{7}{12} \\
+        \ganttgroup[group/.append style={fill=red}]{2. Multi-qubit gate compiler}{7}{11} \\
         \ganttbar[bar/.append style={fill=red}]{2.1. Translating multi-qubit gates}{7}{8} \\
-        \ganttbar[bar/.append style={fill=red}]{2.2. Optimization and registry creation}{9}{11} \\
-        \ganttbar[bar/.append style={fill=red}]{2.3. Simulation and testing}{12}{12} \\
-        \ganttgroup[group/.append style={fill=blue}]{3. Translation of more gates}{13}{15} \\
-        \ganttbar[bar/.append style={fill=blue}]{3.1 Single-Qubit Gates}{13}{13} \\
-        \ganttbar[bar/.append style={fill=blue}]{3.2 Multi-Qubit Gates}{14}{15} \\ \\
+        \ganttbar[bar/.append style={fill=red}]{2.2. Registry Mapping}{9}{10} \\
+        \ganttbar[bar/.append style={fill=red}]{2.3. Simulation and testing}{11}{11} \\
+        \ganttgroup[group/.append style={fill=blue}]{3. Translation of more gates}{12}{14} \\
+        \ganttbar[bar/.append style={fill=blue}]{3.1 Single-Qubit Gates}{12}{12} \\
+        \ganttbar[bar/.append style={fill=blue}]{3.2 Multi-Qubit Gates}{13}{14} \\
+        \ganttgroup[group/.append style={fill=brown}]{4. Test known algorithms}{15}{15} \\ \\
         \ganttgroup[group/.append style={fill=black}]{Thesis Writing}{5}{18} \\
         \ganttbar[bar/.append style={fill=darkgray}]{Introduction \& Methods}{5}{15} \\
         \ganttbar[bar/.append style={fill=lightgray}]{Results}{7}{7}

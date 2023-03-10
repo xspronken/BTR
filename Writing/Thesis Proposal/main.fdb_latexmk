@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1678446324 "main.aux" "main.bbl" "main" 1678446448
+["bibtex main"] 1678446853 "main.aux" "main.bbl" "main" 1678446887
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "BTR.bib" 1678439166 16652 cd682f93dd4a3b6a8d4e7816bf0eb9d0 ""
-  "main.aux" 1678446448 7215 094a981cb58c13137f4408a412ef10a4 "pdflatex"
+  "main.aux" 1678446887 7215 f4f599dc723eae78abc3ddc526c8457c "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1678446447 "/home/xavier/Documents/BTR/Writing/Thesis Proposal/main.tex" "main.pdf" "main" 1678446448
+["pdflatex"] 1678446885 "/home/xavier/Documents/BTR/Writing/Thesis Proposal/main.tex" "main.pdf" "main" 1678446887
   "/etc/texmf/web2c/texmf.cnf" 1676541855 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/xavier/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk" 1678437261 14040 af40d9ef1c7fb5b583f83298943141bd ""
   "/home/xavier/Documents/BTR/Writing/Thesis Proposal/main.tex" 1678446446 2818 c3739d74acba8b059076505cec38b789 ""
@@ -213,14 +213,14 @@
   "Images/register3D.png" 1678434226 390315 1fea8c05495a0534a1e45493f2ccb0ab ""
   "Images/registerHardware.png" 1678436884 531466 86b57b3302fbd8313bc2a5bcf3fc678c ""
   "Introduction.tex" 1678446400 7534 b441543259ef38c0dde3fad10c34f5b1 ""
-  "Methodology.tex" 1678444145 6341 b2bc8f47ebf726a363e24d38654747a1 ""
+  "Methodology.tex" 1678446885 6414 c7cb47b7fe94eeadd8a411aeb962c361 ""
   "Project_impact.tex" 1677750721 1416 a4f5155b8fc3a1342ca8acc3a5a5808b ""
   "Project_objective.tex" 1678444233 1003 f6dfe33111a7cc7b06eb09c10c97bbbb ""
-  "main.aux" 1678446448 7215 094a981cb58c13137f4408a412ef10a4 "pdflatex"
-  "main.bbl" 1678446324 326 ccca28f545e625436be72171414f28d1 "bibtex main"
-  "main.out" 1678446448 1963 518bacd09b2463ce06cf237f9ba2ac8e "pdflatex"
+  "main.aux" 1678446887 7215 f4f599dc723eae78abc3ddc526c8457c "pdflatex"
+  "main.bbl" 1678446853 326 ccca28f545e625436be72171414f28d1 "bibtex main"
+  "main.out" 1678446887 1963 518bacd09b2463ce06cf237f9ba2ac8e "pdflatex"
   "main.tex" 1678446446 2818 c3739d74acba8b059076505cec38b789 ""
-  "main.toc" 1678446448 1284 c40926db96707df213e8e8801e8936df "pdflatex"
+  "main.toc" 1678446887 1284 8dda023343ca2aceb67e62e122c072aa "pdflatex"
   (generated)
   "main.aux"
   "main.log"
