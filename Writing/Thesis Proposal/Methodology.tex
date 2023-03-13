@@ -17,25 +17,19 @@ If the simulations are successful, there may also be a possibility to test the c
 
 Some restrictions need to be taken into account regarding circuit simulation, notably that the hardware used to run the code will be
  a personal laptop. This will limit the complexity of quantum circuits that can be tested to about 5-10 qubits as anything greater
- would take large amounts of time to simulate %TODO Citation. It should also be noted that while Python comes with a comprehensive set of tools that facilitate the 
- completion of this project, it can be quite slow when it comes to computation %TODO Citation.
+ would take large amounts of time to simulate as it can be quite slow when it comes to computation %TODO Citation.
 \subsection{Approach}
 \label{sec:Approach}
 To maximize the chances of producing a functional compiler by the end of the project, a specific approach has to be used. Instead of
- trying to make each step (Parsing, Mapping, Translating, Simulating), a full compilation pipeline will be created for increasingly complex 
+ trying to complete each step (Parsing, Mapping, Translating, Simulating), a full compilation pipeline will be created for increasingly complex 
  QASM algorithms. This means that the project will start by creating a simple parser, optimizer, translator and simulator which will work with
  one or two qubits and a small number of select single-qubit gates. As the project progresses, the pipeline will be modified to handle more complex algorithms, 
  which involve more qubits and multi-qubit gates. Once the compiler can handle multi-qubit gates, the work will shift to translating as many gates as possible 
  into their corresponding optical pulses and making sure the compiler can still work with these new gates.
-\subsection{Ethical considerations}
-\label{sec:Methodethics}
-The software tools used to produce this project are all free and published under open-source licenses, and the different resources used will be cited adequately.
-The code for the compiler will be stored in a GitHub repository and made public under an open-source license once it has acquired enough substance to be usable 
-or useful to other researchers. Thus no further ethical considerations are thought to be required regarding the methodological approaches of this project.
+
 \subsection{Time planning}
 \label{sec:Time}
-As mentioned above in the approach, time planning will be structured towards producing a limited but functional piece of software if the project is held
-up or problems occur. Thus the project will be divided into three steps. First, the basic infrastructure will be created for simple algorithms that only involve
+As mentioned above in the approach, time planning will be structured towards first producing a limited but functional piece of software, which will be extended as time allows. Thus the project will be divided into three steps. First, the basic infrastructure will be created for simple algorithms that only involve
 single-qubit gates. Since these gates do not impose any constraints on how qubits should be stored in the registry, optimization will be handled in the next step.
 This second step involves adapting the compiler to be able to handle multi-qubit gates and the constraints that accompany them. Work on parsing should not be necessary 
 if it was correctly written in step 1.
