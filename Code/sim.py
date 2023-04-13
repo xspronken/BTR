@@ -89,15 +89,15 @@ rydberg_duration = 250
 
 reg1, seq1 = atoms_inline(qubits,spacing)
 
-gates.Rx(np.pi/2,0,seq1)
-gates.Ry(np.pi/12,0,seq1)
+gates.U(np.pi/2,np.pi/2,np.pi/2,0,seq1)
+gates.U(np.pi/12,0,0,0,seq1)
 # gates.Y(0,seq1)
 # gates.X(0,seq1)
 res = Plot_States(qubits, 1,  seq1)
 
 reg, seq = atoms_inline(qubits,spacing)
-gates.QASM_U(np.pi/2,-np.pi/2,np.pi/2,0,seq)
-gates.QASM_U(np.pi/12,0,0,0,seq)
+gates.U1(np.pi/2,np.pi/2,np.pi/2,0,seq)
+gates.U1(np.pi/12,0,0,0,seq)
 # gates.QASM_U(np.pi,np.pi/2,np.pi/2,0,seq)
 # gates.QASM_U(np.pi,0,np.pi,0,seq)
 

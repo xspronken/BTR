@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex main"] 1678703264 "main.aux" "main.bbl" "main" 1678703469
+["bibtex main"] 1678703264 "main.aux" "main.bbl" "main" 1681376174
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
   "BTR.bib" 1678702874 27580 db67cb1ef0576cbc08d49751a9504c27 ""
-  "main.aux" 1678703469 9722 cd3ae93b3729fc1ed03b8755f6704883 "pdflatex"
+  "main.aux" 1681376173 9722 cd3ae93b3729fc1ed03b8755f6704883 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1678703467 "/home/xavier/Documents/BTR/Writing/Thesis Proposal/main.tex" "main.pdf" "main" 1678703469
+["pdflatex"] 1681376172 "/home/xavier/Documents/BTR/Writing/Thesis Proposal/main.tex" "main.pdf" "main" 1681376174
   "/etc/texmf/web2c/texmf.cnf" 1676541855 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/xavier/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk" 1678437261 14040 af40d9ef1c7fb5b583f83298943141bd ""
-  "/home/xavier/Documents/BTR/Writing/Thesis Proposal/main.tex" 1678703467 2837 4ee6696993cdf33ea972c10f28691e2d ""
+  "/home/xavier/Documents/BTR/Writing/Thesis Proposal/main.tex" 1678703474 2837 4ee6696993cdf33ea972c10f28691e2d ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0500.tfm" 1136768653 1536 b3387106d9afecbfe14bde2de6eadf47 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -213,16 +213,16 @@
   "Images/msp-logo.jpeg" 1676542871 7901 90a453b9f43b685623ab51838e302e1d ""
   "Images/register3D.png" 1678434226 390315 1fea8c05495a0534a1e45493f2ccb0ab ""
   "Images/registerHardware.png" 1678436884 531466 86b57b3302fbd8313bc2a5bcf3fc678c ""
-  "Introduction.tex" 1678703435 8388 962e2eeb4224affd16d3ca82112238c7 ""
+  "Introduction.tex" 1681376172 8388 962e2eeb4224affd16d3ca82112238c7 ""
   "Methodology.tex" 1678695991 5736 c29202364879f61a264e101d677264d8 ""
   "Project_impact.tex" 1678696053 886 56c173422d807be5479537dc4a1096af ""
   "Project_objective.tex" 1678703263 983 18d48b290ea8b4a0bdd9fc1e828e73d2 ""
   "ethics.tex" 1678695894 1078 099fda12b632447c6babdde3644b89c8 ""
-  "main.aux" 1678703469 9722 cd3ae93b3729fc1ed03b8755f6704883 "pdflatex"
+  "main.aux" 1681376173 9722 cd3ae93b3729fc1ed03b8755f6704883 "pdflatex"
   "main.bbl" 1678703264 4169 81c19e36dff3e1aae26a1030595c6139 "bibtex main"
-  "main.out" 1678703469 1964 bdacb906a4d4f934c69e0765f8ad8899 "pdflatex"
-  "main.tex" 1678703467 2837 4ee6696993cdf33ea972c10f28691e2d ""
-  "main.toc" 1678703469 1332 bc38865844859b10faf97789df54f038 "pdflatex"
+  "main.out" 1681376173 1964 bdacb906a4d4f934c69e0765f8ad8899 "pdflatex"
+  "main.tex" 1678703474 2837 4ee6696993cdf33ea972c10f28691e2d ""
+  "main.toc" 1681376173 1332 bc38865844859b10faf97789df54f038 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
