@@ -41,6 +41,9 @@ def U_QASM(init, theta,phi,lamda):
                       -np.exp(1j*lamda)*np.sin(theta/2)],
                       [np.exp(1j*phi)*np.sin(theta/2),
                        np.exp(1j*(phi+lamda))*np.cos(theta/2)]])
-    print(op)
+    res = op * init
+    return res
+def I(init):
+    op = qutip.Qobj([[1,0],[0,1]])    
     res = op * init
     return res

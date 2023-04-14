@@ -149,8 +149,9 @@ def Ry1(theta, target, seq):
 
 
 def Rz(theta, target, seq):
-    U(0,2*np.pi,theta/2, target, seq)
-    U(0,2*np.pi,theta/2, target, seq)
+
+    U(theta,2*np.pi,theta, target, seq)
+
 
 
 
@@ -167,8 +168,6 @@ def Z1(target, seq):
 def Z1(target, seq):
     U(0,2*np.pi,np.pi/2, target, seq)
     U(np.pi,2*np.pi,np.pi/2, target, seq)
-
-
 
     
 
