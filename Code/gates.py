@@ -9,11 +9,10 @@ raman_duration = 250
 rydberg_duration = 250
 
 
-def raman_pulse(amplitude, detuning, phase, postphase, duration, seq, target,wf=None,):
+def raman_pulse(amplitude, detuning, phase, postphase, duration, seq, target):
     pulse = Pulse.ConstantDetuning(
         BlackmanWaveform(duration, amplitude), detuning, phase, post_phase_shift=postphase)
     
-
     if "raman" not in seq.declared_channels:
         seq.declare_channel("raman", "raman_local", target)
     else:
@@ -149,8 +148,8 @@ def Ry1(theta, target, seq):
 
 
 def Rz(theta, target, seq):
+    U(theta,0,0, target, seq)
 
-    U(theta,2*np.pi,theta, target, seq)
 
 
 
@@ -175,6 +174,6 @@ def Z1(target, seq):
 
 def QASM_U(theta, phi, lamda, target, seq):
     if theta >= 0:
-        U(phi+np.pi/2,theta,lamda-np.pi/2, target, seq)
+        U(phi-np.pi/2,theta,lamda-np.pi/2, target, seq)
     else:
         U(phi-np.pi/2,-theta,lamda+np.pi/2, target, seq)

@@ -16,7 +16,11 @@ gate y a { U(π, π/2, π/2) a;
         U(π, π/2, π/2) a;
 }
 
+qubit[2] q;
+qubit[2] b;
 
+cnot b, q;
+x q[1];
 
 """
 qasm1 = """
@@ -28,17 +32,21 @@ qubit[2] q;
 qubit[2] b;
 qubit[3] c;
 
-cnot b, c;
-x q, b , c"""
+cnot b, q;
+x q[1]"""
 
 ast = parse(qasm)
+print(ast)
 # print(ast)
 qubits = []
 gates = []
 Defined_gates = []# "U","x","y", "z", "h",'rx',"rz","ry","cx", "cnot" "cz"
 Defined_single_target = [] # "U","x","y", "z", "h",'rx',"rz","ry"
 Defined_two_target = [] #"cx", "cnot" "cz"
-visitors.RegisterVisitor().visit(ast, {"qubits": qubits, "gates": gates ,"define gate": Defined_gates})
+# visitors.RegisterVisitor().visit(ast, context={"define gate": Defined_gates})
+visitors.RegisterVisitor().visit(ast, {"qubits": qubits,"gates": gates,"define gate": Defined_gates})
+
+
 
 print("Registers:")
 for q in qubits:
@@ -49,6 +57,7 @@ print("Gates:")
 for g in gates:
     print(g)
 print()
+
 print("DefinedGates:")
 for g in Defined_gates:
     print(g)

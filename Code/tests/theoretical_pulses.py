@@ -47,3 +47,17 @@ def I(init):
     op = qutip.Qobj([[1,0],[0,1]])    
     res = op * init
     return res
+
+
+def CZ(control,target):
+    op = qutip.Qobj([[1,0,0,0],[0,1,0,0],[0,0,0,1,0],[0,0,0,-1]])    
+    init = qutip.tensor([control,target])
+    res = op * init
+    return res
+
+def CZ(control,target):
+    #### qizkit definitions where q0 is control and q1 target, also possible to have q0 target and q1 control with [1,0,0,0],[0,1,0,0],[0,0,0,1],[0,0,0,1,0]
+    op = qutip.Qobj([[1,0,0,0],[0,0,0,1],[0,0,0,1,0],[0,1,0,0]])    
+    init = qutip.tensor([control,target])
+    res = op * init
+    return res

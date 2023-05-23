@@ -1,0 +1,11 @@
+\section{Discussion}
+\label{Discussion}
+- need to find a way to implement phase gate, if this can be done a universal set is possible, and the QASM\_U gate would also be functional \\
+- no need for an excessively complex registry creation algorithm since all qubits can simply be placed within eachothers rydberg radius. \\
+- Machine specs limiting, can only place a limited amount of qubits that close to eachother\\
+- Constraints for optimization would not require to exclude certain qubits from the rydberg radius to operate properly (simplifies mechanism greatly).\\
+- Since only native multi-qubit gate is CZ, an algorithm would need to be developped in order to recreate all user defined gates, based combinations with the CZ gate.\\
+- This makes the ctrl (and negctrl) modifier very hard to implement ( since "ctrl @ gate" would have to be somehow iplemented using a combination of CZ and single qubit gates)\\
+- Pow modifier no known way to implementation
+- inv is easy for single gates (simply reverse rotation on Rx Ry and Rz, which is possible thanks the fact the Pulser implementations accept negative angle paramters)\\
+- Parsing is a fairly straightforward task once AST is understood, however the parser needds to be able to handle every single type of information present in QASM code, which is much rore than initially expected, on top of this user syntax error correction also needs to be implemented wich makes the job even longer.

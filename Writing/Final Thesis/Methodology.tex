@@ -1,0 +1,60 @@
+\section{Methodology}
+\label{sec:methods}
+
+\subsection{Translating Qubit Gates}
+\label{sec:Gates}
+Used for all gates:
+- Uses pulser.Pulse class, with constant detuning equal to 0 , as it is not needed to perform the unitary gate.\\
+- Waveform = pulser.waveforms.BlackmanWaveform, waveform doesn't seem to affect gates, although no rigourous testing was performed.\\
+- Waveforms are defined by "area under curve" and pulse duration, no amplitude needed, and regardless of duration "Area under curve" = $\theta$
+ as mentioned in introduction.
+- all same duration @ 250ns. Thus pulse duration will depend on the characteristics of the physical quantum computer.
+
+\subsubsection{translating Single Qubit Gates}
+\label{sec:SingleGatesTranslating}
+
+Pulser has native unitary gate U($\lambda$,$\theta$,$\phi$)= Rz($\lambda$)Rx($\theta$)Rz($\phi$)= Rz($\lambda+\phi$)U($-\phi$,$\theta$,$\phi$)\\
+
+Two possibilities:\\
+1. translate native Native Unitary Pulser gate = Rz($\lambda$)Rx($\theta$)Rz($\phi$) to QASM = Rz($\lambda$)Ry($\theta$)Rz($\phi$)\\
+    -   Convert the Pulser Rx rotation into Ry rotation by adding $\pi/2$ to the 1st Rz rotations add removing $\pi/2$ from the second rotation.\\\\
+
+2. Create a universal set of gates using the Pulser unitary gate and try and reproduce QASM unitary gate through universal set combinations.\\
+Approach:\\
+    Create the arbitrary rotation set, which consists of Rx, Ry, Rz, phase gate and the 2-qubit CNOT gate.\\
+    Rx($\theta$) = Pulser\_U(0,$\theta$,0) or Pulser\_U(-pi,$\theta$,pi) if theta negative\\
+    Ry($\theta$) = Pulser\_U($\pi/2,\theta, -\pi/2$) or ... \\
+    Ry($\theta$) = Pulser\_U($\theta$, 0,0) or ... \\
+    
+    phase gate does not seem to have a native implementation to Pasqal's device.
+
+\subsubsection{Translating two Qubit Gates}
+\label{sec:MultiGatesTranslating}
+- CZ is only native 2-qubit gate. (raman pi pulse+rydberg 2pi pulse + raman pi pulse)
+- Can make CNOT by doing H CZ H on qubit
+
+
+\subsubsection{Testing gates}
+\label{sec:MultiGatesTranslating}
+- Using pytest define random initial state and gate parameters.\\
+- Create theoretical gate using matrix form\\
+- Compare Pulser Gate output to Theory Gate output \\
+- Compare the two outputs up to $10^{-4}$ accuracy, since gate fidelity rarely achieves $10^{-5}$
+- repeat n times\\
+- valid if 100\% passrate
+
+
+\subsubsection{Testing Rydberg Blockade}
+- PLace 3 qubits in a equilateral triangle register with triangle side smaller than rydberg blockade radius\\
+- repeat the gate testing but with a sequence of 3 CZ gates (in Pulser and in theory).\\
+- apply gates consecutively to q0 and q1 then q1 and q2 then q2 and q0\\
+- make sure theoretical output matches pulser output\\
+- if results are correct, I can apply a multi-qubit gate to 2 qubits even though a 3rd qubit is within rydberg radius (only if gates are applied consecutively and not in parallel)\\
+
+
+\subsubsection{Parsing QASM code}
+Might skip this since the work I have is not even close to fully functional.
+- Using AST visitor classes to retrieve information.
+- Implement syntax error detection in each visitor
+- Store correct data in a lsit of consecutive tuples
+- read data from tuples and convert into regsiter creation methods and gate methods.

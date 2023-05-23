@@ -87,7 +87,7 @@ def theta(request):
 
 # Run pulser simulation with random initial state
 def sim(init,pulse,theta):
-    reg = Register({"q1":np.array([0,0])})
+    reg = Register({"1":np.array([0,0])})
     seq = Sequence(reg,Chadoq2)
     
     pulse(theta,1,seq)
@@ -99,6 +99,9 @@ def sim(init,pulse,theta):
     res = sim.run()
 
     return res.states[0], res.states[-1]
+
+
+
 
 
 def test_Rx(init_state,theta):
