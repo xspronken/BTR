@@ -1,0 +1,25 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Quantum Computers}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}QASM}{3}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}stdgates.inc}{3}{subsubsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.3}Pasqal's Neutral Atom Quantum Computer}{5}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Register}{5}{subsubsection.1.3.1}%
+\contentsline {subsubsection}{\numberline {1.3.2}Gates}{5}{subsubsection.1.3.2}%
+\contentsline {subsubsection}{\numberline {1.3.3}Pulser}{6}{subsubsection.1.3.3}%
+\contentsline {subsubsection}{\numberline {1.3.4}Pulser's Unitary gate}{6}{subsubsection.1.3.4}%
+\contentsline {section}{\numberline {2}Methodology}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Qunatum Logic Gates}{6}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Translating Single Qubit Gates}{6}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Translating two Qubit Gates}{7}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Testing gates}{7}{subsubsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.2}Testing Rydberg Blockade}{7}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Parsing QASM code}{7}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Results}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Unitary Gates}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Single-qubit Gates}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Multi-qubit Gates}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Parsing}{8}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Discussion}{8}{section.4}%
+\contentsline {section}{\numberline {5}Conclusion}{8}{section.5}%
+\contentsline {section}{\numberline {6}Critical Reflection}{9}{section.6}%

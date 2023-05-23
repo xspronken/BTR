@@ -1,0 +1,97 @@
+\begin{thebibliography}{10}
+
+\bibitem{barredoSyntheticThreedimensionalAtomic2018}
+Daniel Barredo, Vincent Lienhard, Sylvain {de L{\'e}s{\'e}leuc}, Thierry
+  Lahaye, and Antoine Browaeys.
+\newblock Synthetic three-dimensional atomic structures assembled atom by atom.
+\newblock {\em Nature}, 561(7721):79--82, September 2018.
+
+\bibitem{cohenQuantumComputingCircular2021}
+Sam~R. Cohen and Jeff~D. Thompson.
+\newblock Quantum {{Computing}} with {{Circular Rydberg Atoms}}.
+\newblock {\em PRX Quantum}, 2(3):030322, August 2021.
+
+\bibitem{crossOpenQASMBroaderDeeper2022}
+Andrew Cross, Ali {Javadi-Abhari}, Thomas Alexander, Niel De~Beaudrap, Lev~S.
+  Bishop, Steven Heidel, Colm~A. Ryan, Prasahnt Sivarajah, John Smolin, Jay~M.
+  Gambetta, and Blake~R. Johnson.
+\newblock {{OpenQASM}} 3: {{A Broader}} and {{Deeper Quantum Assembly
+  Language}}.
+\newblock {\em ACM Transactions on Quantum Computing}, 3(3):12:1--12:50,
+  September 2022.
+
+\bibitem{henrietQuantumComputingNeutral2020}
+Lo{\"i}c Henriet, Lucas Beguin, Adrien Signoles, Thierry Lahaye, Antoine
+  Browaeys, Georges-Olivier Reymond, and Christophe Jurczak.
+\newblock Quantum computing with neutral atoms.
+\newblock {\em Quantum}, 4:327, September 2020.
+
+\bibitem{laddQuantumComputers2010}
+T.~D. Ladd, F.~Jelezko, R.~Laflamme, Y.~Nakamura, C.~Monroe, and J.~L. O'Brien.
+\newblock Quantum computers.
+\newblock {\em Nature}, 464(7285):45--53, March 2010.
+
+\bibitem{mckayEfficientGatesQuantum2017}
+David~C. McKay, Christopher~J. Wood, Sarah Sheldon, Jerry~M. Chow, and Jay~M.
+  Gambetta.
+\newblock Efficient \${{Z}}\$ gates for quantum computing.
+\newblock {\em Physical Review A}, 96(2):022330, August 2017.
+
+\bibitem{mummaneniLaserControlledImplementationControlledNOT2022}
+Bharadwaj~Chowdary Mummaneni, Jing Liu, Georgios Lefkidis, and Wolfgang
+  H{\"u}bner.
+\newblock Laser-{{Controlled Implementation}} of {{Controlled-NOT}},
+  {{Hadamard}}, {{SWAP}}, and {{Pauli Gates}} as {{Well}} as {{Generation}} of
+  {{Bell States}} in a 3d\textendash 4f {{Molecular Magnet}}.
+\newblock {\em The Journal of Physical Chemistry Letters}, 13(11):2479--2485,
+  March 2022.
+
+\bibitem{saffmanQuantumComputingAtomic2016}
+M~Saffman.
+\newblock Quantum computing with atomic qubits and {{Rydberg}} interactions:
+  Progress and challenges.
+\newblock {\em Journal of Physics B: Atomic, Molecular and Optical Physics},
+  49(20):202001, October 2016.
+
+\bibitem{saffmanQuantumInformationRydberg2010}
+M.~Saffman, T.~G. Walker, and K.~M{\o}lmer.
+\newblock Quantum information with {{Rydberg}} atoms.
+\newblock {\em Reviews of Modern Physics}, 82(3):2313--2363, August 2010.
+
+\bibitem{schlosserSubpoissonianLoadingSingle2001}
+Nicolas Schlosser, Georges Reymond, Igor Protsenko, and Philippe Grangier.
+\newblock Sub-poissonian loading of single atoms in a microscopic dipole trap.
+\newblock {\em Nature}, 411(6841):1024--1027, June 2001.
+
+\bibitem{silverioPulserOpensourcePackage2022}
+Henrique Silv{\'e}rio, Sebasti{\'a}n Grijalva, Constantin Dalyac, Lucas
+  Leclerc, Peter~J. Karalekas, Nathan Shammah, Mourad Beji, Louis-Paul Henry,
+  and Lo{\"i}c Henriet.
+\newblock Pulser: {{An}} open-source package for the design of pulse sequences
+  in programmable neutral-atom arrays.
+\newblock {\em Quantum}, 6:629, January 2022.
+
+\bibitem{tsaiPulselevelSchedulingQuantum2022}
+Richard Bing-Shiun Tsai, Henrique Silv{\'e}rio, and Loic Henriet.
+\newblock Pulse-level {{Scheduling}} of {{Quantum Circuits}} for {{Neutral-Atom
+  Devices}}, June 2022.
+
+\bibitem{williamsQuantumGates2011}
+Colin~P. Williams.
+\newblock Quantum {{Gates}}.
+\newblock In Colin~P. Williams, editor, {\em Explorations in {{Quantum
+  Computing}}}, Texts in {{Computer Science}}, pages 51--122. {Springer},
+  {London}, 2011.
+
+\bibitem{wisemanInterpretationQuantumJump1993}
+H.~M. Wiseman and G.~J. Milburn.
+\newblock Interpretation of quantum jump and diffusion processes illustrated on
+  the {{Bloch}} sphere.
+\newblock {\em Physical Review A}, 47(3):1652--1666, March 1993.
+
+\bibitem{wongIntroductionClassicalQuantum2022a}
+Thomas~G. Wong.
+\newblock {\em Introduction to Classical and Quantum Computing}.
+\newblock {Rooted Grove}, {Omaha, Nebraska}, 2022.
+
+\end{thebibliography}

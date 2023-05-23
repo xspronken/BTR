@@ -16,14 +16,30 @@ class RegisterVisitor(QASMVisitor):
         super().generic_visit(node, context)
 
     def visit_QubitDeclaration(self, node, context=None):
-        qubits = context["qubits"]
-        qubits.append(
-            (node.qubit.name, node.size.value)
-        )
+        if not context.get("qubits") is None:
+            qubits = context["qubits"]
+            qubits.append(
+                (node.qubit.name, node.size.value)
+            )
     
         
     def visit_QuantumGate(self, node, context=None):
-        if context.get("gates"):
+        if context.get("gate expression") is not None:
+            g = context["gate expression"]
+            tmp1 = []
+            for q in node.qubits:
+                if isinstance(q, oqast.Identifier):
+                    tmp = []
+                    for id in g.arguments:
+                        tmp.append(get_value(id))
+                    tmp1.append((g.name.name,tmp))
+                # elif isinstance(q, oqast.IndexedIdentifier):
+                #     tmp = []
+                #     if not g.name.name in def_gate:
+                #         print("not defined yet error")
+                #     tmp1.append((g.name.name, ))
+            return tmp1
+        if context.get("gates") is not None:
             gates = context["gates"]
             reg = dict(context["qubits"])
             targets = []
@@ -43,28 +59,17 @@ class RegisterVisitor(QASMVisitor):
             gates.append(
                 (node.name.name, targets)
             )
-        elif context.get("gate expression"): 
-            g = context["gate expression"]
-            tmp1 = []
-            for q in node.qubits:
-                if isinstance(q, oqast.Identifier):
-                    tmp = []
-                    for id in g.arguments:
-                        tmp.append(get_value(id))
-                    tmp1.append((g.name.name,tmp))
-                # elif isinstance(q, oqast.IndexedIdentifier):
-                #     tmp = []
-                #     if not g.name.name in def_gate:
-                #         print("not defined yet error")
-                #     tmp1.append((g.name.name, ))
-            return tmp1
+
 
     def visit_QuantumGateDefinition(self, node, context=None):
-        def_gate = context["define gate"]
-        temp_gate = []
-        
-        for g in node.body:
-            if isinstance(g, oqast.QuantumGate):
-                data = RegisterVisitor.visit_QuantumGate(self,node, {"define gate": def_gate, 'gate expression': g, "temp_gate": temp_gate})
-                temp_gate.append(data)
-        def_gate.append((node.name.name, len(node.qubits),temp_gate))
+        if context.get("define gate") is not None:
+            def_gate = context["define gate"]
+            temp_gate = []
+            
+            for g in node.body:
+                if isinstance(g, oqast.QuantumGate):
+                    data = RegisterVisitor.visit_QuantumGate(self,node, {"define gate": def_gate, 'gate expression': g, "temp_gate": temp_gate})
+                    temp_gate.append(data)
+
+                    print(data)
+            def_gate.append((node.name.name, len(node.qubits),temp_gate))

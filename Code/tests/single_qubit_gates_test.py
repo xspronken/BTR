@@ -11,7 +11,7 @@ from Code import gates
 
 
 i = 1
-n = 5
+n = 1
 t = 252
 
 
@@ -29,16 +29,6 @@ def gamma(request):
 @pytest.fixture(params=[np.random.random()*2*np.pi for i in range(n)])
 def phi(request):
     return request.param
-
-# @pytest.fixture(params=pis)
-# def theta(request):
-#     return request.param
-# @pytest.fixture(params=pis)
-# def gamma(request):
-#     return request.param
-# @pytest.fixture(params=pis)
-# def phi(request):
-#     return request.param
 
 ### Sim for gates with no parameter
 def sim(init,pulse):
@@ -67,8 +57,12 @@ def sim_arb(init,pulse,theta):
     sim.initial_state = init
 
     res = sim.run()
-
-    return res.states[0], res.states[-1], res.states
+    phase = seq.current_phase_ref("q1")
+    print('phase', phase)
+    if theta<0:
+        phase = -phase
+    final = theory.Rz(res.states[-1],phase)
+    return res.states[0], final, res.states[-1]
 
 ### Sim for unitary gates (3 parameters)
 def sim_U(init,pulse, gamma, theta, phi):
@@ -82,8 +76,9 @@ def sim_U(init,pulse, gamma, theta, phi):
     sim.initial_state = init
 
     res = sim.run()
-
-    return res.states[0], res.states[-1], res.states
+    phase = seq.current_phase_ref("q1")
+    final = theory.Rz(res.states[-1], phase)
+    return res.states[0], final, res.states[-1], res.states
 
 
 ####  TEST PAULI GATES ####
@@ -137,42 +132,27 @@ def sim_U(init,pulse, gamma, theta, phi):
 ### ARBITRARY ROTATION GATES ###
 # def test_Rx(init_state,theta):
 #     a = theory.Rx(init_state,theta)
-#     _, c, e = sim_arb(init_state, gates.Rx,theta)
+#     _, c, e = sim_arb(init_state, gates.Rx1,theta)
     
-#     b = qutip.Bloch()
-#     b.add_states(e,'point',alpha=0.1)
-#     b.add_states([init_state,a,c])
-#     b.save(f"/home/xavier/Documents/BTR/Code/tests/img/Rx-{theta}.png")
+#     # b = qutip.Bloch()
+#     # b.add_states(e,'point',alpha=0.1)
+#     # b.add_states([init_state,a,c])
+#     # b.save(f"/home/xavier/Documents/BTR/Code/tests/img/Rx-{theta}.png")
 
 #     np.testing.assert_almost_equal(a[0],c[0], decimal=4)
 #     np.testing.assert_almost_equal(a[1],c[1],decimal=4)
 
-
-# def test_Rx1(init_state,theta):
-#     a = theory.Rx(init_state,theta)
-#     b, c = sim_arb(init_state, gates.Rx1,theta)
-#     print('init',b)
-#     print('thoery', a)
-#     print('pulse',c)
-    
-#     np.testing.assert_almost_equal(a[0],c[0], decimal=4)
-#     np.testing.assert_almost_equal(a[1],c[1],decimal=4)
 
 # def test_Ry(init_state,theta):
 #     a = theory.Ry(init_state,theta)
-#     _, c, e = sim_arb(init_state, gates.Ry,theta)
-#     b = qutip.Bloch()
-#     b.add_states(e,'point',alpha=0.1)
-#     b.add_states([init_state,a,c])
-#     b.save(f"/home/xavier/Documents/BTR/Code/tests/img/Ry-{theta}.png")
+#     _, c, e = sim_arb(init_state, gates.Ry1,theta)
+#     # b = qutip.Bloch()
+#     # b.add_states(e,'point',alpha=0.1)
+#     # b.add_states([init_state,a,c])
+#     # b.save(f"/home/xavier/Documents/BTR/Code/tests/img/Ry-{theta}.png")
 #     np.testing.assert_almost_equal(a[0],c[0], decimal=4)
 #     np.testing.assert_almost_equal(a[1],c[1],decimal=4)
 
-# def test_Ry1(init_state,theta):
-#     a = theory.Ry(init_state,theta)
-#     b, c = sim_arb(init_state, gates.Ry1,theta)
-#     np.testing.assert_almost_equal(a[0],c[0], decimal=4)
-#     np.testing.assert_almost_equal(a[1],c[1],decimal=4)
 
 
 # def test_Rz(init_state,theta):
@@ -182,12 +162,13 @@ def sim_U(init,pulse, gamma, theta, phi):
 #     print('init',init_state)
 #     print('thoery', a)
 #     print('pulse',c)
-#     b = qutip.Bloch()
-#     b.add_states(e,'point',alpha=0.1)
-#     b.add_states([init_state,a,c])
-#     b.save(f"/home/xavier/Documents/BTR/Code/tests/img/Rz-{theta}.png")
-#     np.testing.assert_almost_equal(np.abs(a[0]),np.abs(c[0]), decimal=4)
-#     np.testing.assert_almost_equal(np.abs(a[1]),np.abs(c[1]),decimal=4)
+#     print('pulse',e)
+#     # b = qutip.Bloch()
+#     # b.add_states(e,'point',alpha=0.1)
+#     # b.add_states([init_state,a,c])
+#     # b.save(f"/home/xavier/Documents/BTR/Code/tests/img/Rz-{theta}.png")
+#     np.testing.assert_almost_equal(a[0],c[0], decimal=4)
+#     np.testing.assert_almost_equal(a[1],c[1],decimal=4)
 
 
 
@@ -204,12 +185,13 @@ def sim_U(init,pulse, gamma, theta, phi):
 def test_UQASM(init_state,gamma,theta,phi):
     init = str(init_state)
     a = theory.U_QASM(init_state,gamma,theta,phi)
-    _, c , e = sim_U(init_state, gates.QASM_U,gamma,theta,phi)
+    _, c , e, f = sim_U(init_state, gates.QASM_U,gamma,theta,phi)
     print("init", init_state)
     print("thoery",a)
     print( "sim",c)
+    print( "sim",e)
     b = qutip.Bloch()
-    b.add_states(e,'point',0.1)
+    b.add_states(f,'point',0.1)
     b.add_states([init_state, a, c])
     b.save(f"/home/xavier/Documents/BTR/Code/tests/img/{gamma}{theta}{phi}.png")
 

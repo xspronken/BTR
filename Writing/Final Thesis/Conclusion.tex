@@ -1,0 +1,11 @@
+\section{Conclusion}
+- All single gates successful, except Phase (and QASM\_U by extension)\\ 
+
+- easy: registry creation, most single qubit gates\\
+- hard: making arbitrary multiqubit gates with ctrl modifier, \\
+- unknown: making phase gate.\\ \\
+
+- Conclusion: While very good for analog computation, the lack of phase gate and native multi-qubit gates make it very hard to implement "digital" computation
+on this machine, it is possible though. But will require complex multi-qubit gate creation algorithms that are capable of finding a combination of
+ gates that satisfies any user-defined multi-qubit gate. As well as an algorithm that is capable of creating an adequate registry once all the pairs of qubits 
+ that interact due to a native CZ gate are found.
