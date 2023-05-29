@@ -17,26 +17,14 @@ gate y a { U(π, π/2, π/2) a;
 }
 
 qubit[2] q;
-qubit[2] b;
+qubit[3] b;
 
 cnot b, q;
 x q[1];
 
 """
-qasm1 = """
-// Pauli gate: bit and phase flip
-gate y a { U(π, π/2, π/2) a; }
-// Pauli gate: phase flip
-gate z a { p(π) a; }
-qubit[2] q;
-qubit[2] b;
-qubit[3] c;
-
-cnot b, q;
-x q[1]"""
 
 ast = parse(qasm)
-print(ast)
 # print(ast)
 qubits = []
 gates = []
@@ -58,7 +46,7 @@ for g in gates:
     print(g)
 print()
 
-print("DefinedGates:")
+print("Defined Gates:")
 for g in Defined_gates:
     print(g)
 

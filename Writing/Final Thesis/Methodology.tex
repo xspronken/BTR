@@ -1,60 +1,66 @@
 \section{Methodology}
 \label{sec:methods}
 
-\subsection{Qunatum Logic Gates}
+\subsection{Quantum Logic Gates}
 \label{sec:Gates}
-Used for all gates:
-- Uses pulser.Pulse class, with constant detuning equal to 0 , as it is not needed to perform the unitary gate.\\
-- Waveform = pulser.waveforms.BlackmanWaveform, waveform doesn't seem to affect gates, although no rigourous testing was performed.\\
-- Waveforms are defined by "area under curve" and pulse duration, no amplitude needed, and regardless of duration "Area under curve" = $\theta$
- as mentioned in introduction.
-- all same duration @ 250ns. Thus pulse duration will depend on the characteristics of the physical quantum computer.
 
+The $pulser.Pulse$ class was used to create the optical pulses corresponding to each quantum gate, using $pulser.waveforms.BlackmanWaveform$ as a preset.
+Below is the function used to create a Raman pulse, this is the pulse used for single-qubit operations:
+
+\begin{lstlisting}
+def raman_pulse(area, detuning, phase, postphase, duration, sequence, target):
+    pulse = Pulse.ConstantDetuning(
+        BlackmanWaveform(duration, area), detuning, phase, post_phase_shift=postphase)
+    
+    if "raman" not in sequence.declared_channels:
+        sequence.declare_channel("raman", "raman_local", target)
+    else:
+        sequence.target(target, "raman")
+
+    sequence.add(pulse, "raman", "wait-for-all")
+    \end{lstlisting}
+Other waveform presets are available but have not yet been tested, as they would require different phase parameters.
+Since the waveforms, are defined directly by the area under the curve there is no need to adjust the amplitude or the duration of the pulse.
+Thus the duration is set to 250ns, but this can be changed to a shorter duration depending on the specifications of the device.
+The detuning is also constant and set to 0 for every gate to produce a resonant pulse.
 \subsubsection{Translating Single Qubit Gates}
 \label{sec:SingleGatesTranslating}
+When it comes to translating single qubit gates, there are two options, one can either try and recreate,
+the QASM unitary gate and modifiers using native pulses to the Pascal computer or reproduce every gate in the stdgates.inc. Since the gates in this file are a universal set,
+one would then have to make use of a transpiler to implement user-defined gates, whereas the first solution would require finding adequate parameters for the unitary gate.
+The parameters used for all the gates are provided in the annex.
 
-Pulser has native unitary gate U($\lambda$,$\theta$,$\phi$)= Rz($\lambda$)Rx($\theta$)Rz($\phi$)= Rz($\lambda+\phi$)U($-\phi$,$\theta$,$\phi$)\\
-
-Two possibilities:\\
-1. translate native Native Unitary Pulser gate = Rz($\lambda$)Rx($\theta$)Rz($\phi$) to QASM = Rz($\lambda$)Ry($\theta$)Rz($\phi$)\\
-    -   Convert the Pulser Rx rotation into Ry rotation by adding $\pi/2$ to the 1st Rz rotations add removing $\pi/2$ from the second rotation.\\\\
-
-2. Create a universal set of gates using the Pulser unitary gate and try and reproduce QASM unitary gate through universal set combinations.\\
-Approach:\\
-    Create the arbitrary rotation set, which consists of Rx, Ry, Rz, phase gate and the 2-qubit CNOT gate.\\
-    Rx($\theta$) = Pulser\_U(0,$\theta$,0) or Pulser\_U(-pi,$\theta$,pi) if theta negative\\
-    Ry($\theta$) = Pulser\_U($\pi/2,\theta, -\pi/2$) or ... \\
-    Ry($\theta$) = Pulser\_U($\theta$, 0,0) or ... \\
-    
-    phase gate does not seem to have a native implementation to Pasqal's device.
-
-\subsubsection{Translating two Qubit Gates}
+\subsubsection{Translating Two Qubit Gates}
 \label{sec:MultiGatesTranslating}
-- CZ is only native 2-qubit gate. (raman pi pulse+rydberg 2pi pulse + raman pi pulse)
-- Can make CNOT by doing H CZ H on qubit
-
-
-\subsubsection{Testing gates}
-\label{sec:MultiGatesTranslating}
-- Using pytest define random initial state and gate parameters.\\
-- Create theoretical gate using matrix form\\
-- Compare Pulser Gate output to Theory Gate output \\
-- Compare the two outputs up to $10^{-4}$ accuracy, since gate fidelity rarely achieves $10^{-5}$
-- repeat n times\\
-- valid if 100\% passrate
+The only native two-qubit gate is the CZ gate, achieved by producing a sequence of three pulses using the Rydberg channel. As shown in Figure 4,
+these pulses are simply a pulse of area $\pi$ followed by a $2\pi$ pulse and another $\pi$ pulse after that. All of these pulses have a detuning and phase of 0.
+One can then combine this gate with two Hadammard gates to form a CNOT gate, which combined with the Rx, Ry and Rz gates is considered a Universal set.
+When running a pulser simulation with these gates, the qubits temporarily become qutrits since a third state is reached, thus the initial state will also have to be defined using qutrits.
+The results of the simulation will then need to be reduced back to base 2.
+\subsubsection{Testing Gates}
+\label{sec:Gatetest}
+Since pulser offers the possibility to simulate with a user-defined arbitrary initial state, multiple simulations can be run consecutively for the same gate, but with different initial state vectors.
+This way a gate can be comprehensively tested against the mathematical theory.
+The initial state is defined randomly using the $rand\_ket()$ method from the Qutip library. The theoretical results are then computed by applying the gate operator to the initial state vector.
+These theoretical results can then be compared to the results produced by the corresponding sequence of pulses.
+One should note that the results should be compared to an accuracy of $10^{-4}$ as the fidelity of the gates starts breaking down at smaller accuracies.
+The comparison is then repeated multiple times, with different initial states, if 100\% of the test succeeds, then the gate is considered correct.
+Two different types of comparisons are made, first comparing the absolute value of the eigenvalues, we can determine whether the probabilities of measuring a certain state after applying the tested gates are correct.
+If this first comparison succeeds we can then compare the eigenvalues directly. If the first comparison succeeds and the second fails, this means there is an issue with the phase of the qubit after the gate was applied.
 
 
 \subsection{Testing Rydberg Blockade}
-- PLace 3 qubits in a equilateral triangle register with triangle side smaller than rydberg blockade radius\\
-- repeat the gate testing but with a sequence of 3 CZ gates (in Pulser and in theory).\\
-- apply gates consecutively to q0 and q1 then q1 and q2 then q2 and q0\\
-- make sure theoretical output matches pulser output\\
-- if results are correct, I can apply a multi-qubit gate to 2 qubits even though a 3rd qubit is within rydberg radius (only if gates are applied consecutively and not in parallel)\\
+This test is conducted to check whether qubits within the Rydberg radius of the target and control qubits of a certain multi-qubit gate would affect results.
+To test this, 4 qubits are placed in a 1 nm-sided square so each qubit is within the Rydberg radius of the three others.
+Following this a CNOT gate is first applied to q0 and q1, after which a second CNOT gate is applied to q2 and q3.
+The initial states in pulser have to be modified into random qutrits with 0 probability of being in the Rydberg state.
+The Pulser simulation results can then be reduced back to qubits and compared with the mathematical theory.
 
 
-\subsection{Parsing QASM code}
-Might skip this since the work I have is not even close to fully functional.
-- Using AST visitor classes to retrieve information.
-- Implement syntax error detection in each visitor
-- Store correct data in a lsit of consecutive tuples
-- read data from tuples and convert into regsiter creation methods and gate methods.
+\subsection{Parsing QASM Code}
+Parsing the QASM code is done using the OpenQASM3.parse() method. This method converts the QASM code into an Abstract Syntax Tree (AST), which can be accessed through node visitor classes.
+Each node visitor will be launched consecutively with a context parameter that will store the information retrieved.
+Once a node visitor is called, it may also call other visitors with a specific context variable. Each node visitor will have to 
+contain QASM syntax checking for each of the QASM commands that are available and interrupt the compilation to throw an error to the user.
+The context parameters are created as lists of tuples that contain all the information retrieved by a visitor in a particular context.
+

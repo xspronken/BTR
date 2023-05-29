@@ -1,97 +1,87 @@
 \begin{thebibliography}{10}
 
-\bibitem{barredoSyntheticThreedimensionalAtomic2018}
-Daniel Barredo, Vincent Lienhard, Sylvain {de L{\'e}s{\'e}leuc}, Thierry
-  Lahaye, and Antoine Browaeys.
-\newblock Synthetic three-dimensional atomic structures assembled atom by atom.
-\newblock {\em Nature}, 561(7721):79--82, September 2018.
-
-\bibitem{cohenQuantumComputingCircular2021}
-Sam~R. Cohen and Jeff~D. Thompson.
-\newblock Quantum {{Computing}} with {{Circular Rydberg Atoms}}.
-\newblock {\em PRX Quantum}, 2(3):030322, August 2021.
-
-\bibitem{crossOpenQASMBroaderDeeper2022}
-Andrew Cross, Ali {Javadi-Abhari}, Thomas Alexander, Niel De~Beaudrap, Lev~S.
-  Bishop, Steven Heidel, Colm~A. Ryan, Prasahnt Sivarajah, John Smolin, Jay~M.
-  Gambetta, and Blake~R. Johnson.
-\newblock {{OpenQASM}} 3: {{A Broader}} and {{Deeper Quantum Assembly
-  Language}}.
-\newblock {\em ACM Transactions on Quantum Computing}, 3(3):12:1--12:50,
-  September 2022.
-
 \bibitem{henrietQuantumComputingNeutral2020}
-Lo{\"i}c Henriet, Lucas Beguin, Adrien Signoles, Thierry Lahaye, Antoine
-  Browaeys, Georges-Olivier Reymond, and Christophe Jurczak.
-\newblock Quantum computing with neutral atoms.
-\newblock {\em Quantum}, 4:327, September 2020.
+Henriet L, Beguin L, Signoles A, Lahaye T, Browaeys A, Reymond GO, et~al.
+\newblock Quantum Computing with Neutral Atoms.
+\newblock Quantum. 2020 Sep;4:327.
 
-\bibitem{laddQuantumComputers2010}
-T.~D. Ladd, F.~Jelezko, R.~Laflamme, Y.~Nakamura, C.~Monroe, and J.~L. O'Brien.
-\newblock Quantum computers.
-\newblock {\em Nature}, 464(7285):45--53, March 2010.
+\bibitem{wongIntroductionClassicalQuantum2022a}
+Wong TG.
+\newblock Introduction to Classical and Quantum Computing.
+\newblock {Omaha, Nebraska}: {Rooted Grove}; 2022.
+
+\bibitem{wisemanInterpretationQuantumJump1993}
+Wiseman HM, Milburn GJ.
+\newblock Interpretation of Quantum Jump and Diffusion Processes Illustrated on
+  the {{Bloch}} Sphere.
+\newblock Physical Review A. 1993 Mar;47(3):1652-66.
 
 \bibitem{mckayEfficientGatesQuantum2017}
-David~C. McKay, Christopher~J. Wood, Sarah Sheldon, Jerry~M. Chow, and Jay~M.
-  Gambetta.
-\newblock Efficient \${{Z}}\$ gates for quantum computing.
-\newblock {\em Physical Review A}, 96(2):022330, August 2017.
+McKay DC, Wood CJ, Sheldon S, Chow JM, Gambetta JM.
+\newblock Efficient \${{Z}}\$ Gates for Quantum Computing.
+\newblock Physical Review A. 2017 Aug;96(2):022330.
 
 \bibitem{mummaneniLaserControlledImplementationControlledNOT2022}
-Bharadwaj~Chowdary Mummaneni, Jing Liu, Georgios Lefkidis, and Wolfgang
-  H{\"u}bner.
+Mummaneni BC, Liu J, Lefkidis G, H{\"u}bner W.
 \newblock Laser-{{Controlled Implementation}} of {{Controlled-NOT}},
   {{Hadamard}}, {{SWAP}}, and {{Pauli Gates}} as {{Well}} as {{Generation}} of
   {{Bell States}} in a 3d\textendash 4f {{Molecular Magnet}}.
-\newblock {\em The Journal of Physical Chemistry Letters}, 13(11):2479--2485,
-  March 2022.
-
-\bibitem{saffmanQuantumComputingAtomic2016}
-M~Saffman.
-\newblock Quantum computing with atomic qubits and {{Rydberg}} interactions:
-  Progress and challenges.
-\newblock {\em Journal of Physics B: Atomic, Molecular and Optical Physics},
-  49(20):202001, October 2016.
-
-\bibitem{saffmanQuantumInformationRydberg2010}
-M.~Saffman, T.~G. Walker, and K.~M{\o}lmer.
-\newblock Quantum information with {{Rydberg}} atoms.
-\newblock {\em Reviews of Modern Physics}, 82(3):2313--2363, August 2010.
-
-\bibitem{schlosserSubpoissonianLoadingSingle2001}
-Nicolas Schlosser, Georges Reymond, Igor Protsenko, and Philippe Grangier.
-\newblock Sub-poissonian loading of single atoms in a microscopic dipole trap.
-\newblock {\em Nature}, 411(6841):1024--1027, June 2001.
-
-\bibitem{silverioPulserOpensourcePackage2022}
-Henrique Silv{\'e}rio, Sebasti{\'a}n Grijalva, Constantin Dalyac, Lucas
-  Leclerc, Peter~J. Karalekas, Nathan Shammah, Mourad Beji, Louis-Paul Henry,
-  and Lo{\"i}c Henriet.
-\newblock Pulser: {{An}} open-source package for the design of pulse sequences
-  in programmable neutral-atom arrays.
-\newblock {\em Quantum}, 6:629, January 2022.
-
-\bibitem{tsaiPulselevelSchedulingQuantum2022}
-Richard Bing-Shiun Tsai, Henrique Silv{\'e}rio, and Loic Henriet.
-\newblock Pulse-level {{Scheduling}} of {{Quantum Circuits}} for {{Neutral-Atom
-  Devices}}, June 2022.
+\newblock The Journal of Physical Chemistry Letters. 2022 Mar;13(11):2479-85.
 
 \bibitem{williamsQuantumGates2011}
-Colin~P. Williams.
+Williams CP.
 \newblock Quantum {{Gates}}.
-\newblock In Colin~P. Williams, editor, {\em Explorations in {{Quantum
-  Computing}}}, Texts in {{Computer Science}}, pages 51--122. {Springer},
-  {London}, 2011.
+\newblock In: Williams CP, editor. Explorations in {{Quantum Computing}}. Texts
+  in {{Computer Science}}. {London}: {Springer}; 2011. p. 51-122.
 
-\bibitem{wisemanInterpretationQuantumJump1993}
-H.~M. Wiseman and G.~J. Milburn.
-\newblock Interpretation of quantum jump and diffusion processes illustrated on
-  the {{Bloch}} sphere.
-\newblock {\em Physical Review A}, 47(3):1652--1666, March 1993.
+\bibitem{barredoSyntheticThreedimensionalAtomic2018}
+Barredo D, Lienhard V, {de L{\'e}s{\'e}leuc} S, Lahaye T, Browaeys A.
+\newblock Synthetic Three-Dimensional Atomic Structures Assembled Atom by Atom.
+\newblock Nature. 2018 Sep;561(7721):79-82.
 
-\bibitem{wongIntroductionClassicalQuantum2022a}
-Thomas~G. Wong.
-\newblock {\em Introduction to Classical and Quantum Computing}.
-\newblock {Rooted Grove}, {Omaha, Nebraska}, 2022.
+\bibitem{laddQuantumComputers2010}
+Ladd TD, Jelezko F, Laflamme R, Nakamura Y, Monroe C, O'Brien JL.
+\newblock Quantum Computers.
+\newblock Nature. 2010 Mar;464(7285):45-53.
+
+\bibitem{crossOpenQASMBroaderDeeper2022}
+Cross A, {Javadi-Abhari} A, Alexander T, De~Beaudrap N, Bishop LS, Heidel S,
+  et~al.
+\newblock {{OpenQASM}} 3: {{A Broader}} and {{Deeper Quantum Assembly
+  Language}}.
+\newblock ACM Transactions on Quantum Computing. 2022 Sep;3(3):12:1-12:50.
+
+\bibitem{schlosserSubpoissonianLoadingSingle2001}
+Schlosser N, Reymond G, Protsenko I, Grangier P.
+\newblock Sub-Poissonian Loading of Single Atoms in a Microscopic Dipole Trap.
+\newblock Nature. 2001 Jun;411(6841):1024-7.
+
+\bibitem{silverioPulserOpensourcePackage2022}
+Silv{\'e}rio H, Grijalva S, Dalyac C, Leclerc L, Karalekas PJ, Shammah N,
+  et~al.
+\newblock Pulser: {{An}} Open-Source Package for the Design of Pulse Sequences
+  in Programmable Neutral-Atom Arrays.
+\newblock Quantum. 2022 Jan;6:629.
+
+\bibitem{tsaiPulselevelSchedulingQuantum2022}
+Tsai RBS, Silv{\'e}rio H, Henriet L. Pulse-Level {{Scheduling}} of {{Quantum
+  Circuits}} for {{Neutral-Atom Devices}}. {arXiv}; 2022.
+
+\bibitem{cohenQuantumComputingCircular2021}
+Cohen SR, Thompson JD.
+\newblock Quantum {{Computing}} with {{Circular Rydberg Atoms}}.
+\newblock PRX Quantum. 2021 Aug;2(3):030322.
+
+\bibitem{saffmanQuantumComputingAtomic2016}
+Saffman M.
+\newblock Quantum Computing with Atomic Qubits and {{Rydberg}} Interactions:
+  Progress and Challenges.
+\newblock Journal of Physics B: Atomic, Molecular and Optical Physics. 2016
+  Oct;49(20):202001.
+
+\bibitem{saffmanQuantumInformationRydberg2010}
+Saffman M, Walker TG, M{\o}lmer K.
+\newblock Quantum Information with {{Rydberg}} Atoms.
+\newblock Reviews of Modern Physics. 2010 Aug;82(3):2313-63.
 
 \end{thebibliography}
