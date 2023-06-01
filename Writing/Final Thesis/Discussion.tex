@@ -1,11 +1,36 @@
 \section{Discussion}
 \label{Discussion}
-- need to find a way to implement phase gate, if this can be done a universal set is possible, and the QASM\_U gate would also be functional \\
-- no need for an excessively complex registry creation algorithm since all qubits can simply be placed within eachothers rydberg radius. \\
-- Machine specs limiting, can only place a limited amount of qubits that close to eachother\\
-- Constraints for optimization would not require to exclude certain qubits from the rydberg radius to operate properly (simplifies mechanism greatly).\\
-- Since only native multi-qubit gate is CZ, an algorithm would need to be developped in order to recreate all user defined gates, based combinations with the CZ gate.\\
-- This makes the ctrl (and negctrl) modifier very hard to implement ( since "ctrl @ gate" would have to be somehow iplemented using a combination of CZ and single qubit gates)\\
-- Pow modifier no known way to implementation
-- inv is easy for single gates (simply reverse rotation on Rx Ry and Rz, which is possible thanks the fact the Pulser implementations accept negative angle paramters)\\
-- Parsing is a fairly straightforward task once AST is understood, however the parser needds to be able to handle every single type of information present in QASM code, which is much rore than initially expected, on top of this user syntax error correction also needs to be implemented wich makes the job even longer.
+\subsection{Test Results}
+The test results are quite promising, although there are numerous phase and sign problems. The fact that the CNOT gate was a full success while using two Hadamard gates, indicates that the sign flips on the 
+Pauli and Hadamard gates may not be problematic. 
+
+\subsection{Rydberg Blockade}
+The results of this test are very encouraging for optimizing the register population. If all 
+Rydberg pulses are applied consecutively and not in parallel, the position of all the qubits in the register does not affect the result of the gate as long as it is applied
+on two qubits that are within each other's Rydberg radius. This is a major boon, as a very simple solution to this problem is to place all qubits inside a circle of diameter slightly 
+inferior to the Rydberg blockade. This solution, while very simple is also limited by hardware specs, as only a limited amount of qubits could be placed in such a circle.
+On the other hand, this solution could be extended, by creating multiple overlapping circles and placing the qubits in each circle based on which other qubits they have to interact with.
+
+
+
+\subsection{Gate Modifiers}
+
+Other than the $inv$ modifier, which could be implemented quite easily since the Rx, Ry, as well as the Unitary gate, accept negative parameters. gate modifiers are the more difficult command to translate since they are extremely versatile and can be used on any gate.
+However, creating an algorithm that could implement them would be an extremely difficult task. Every user-defined control gate created would have to be transpiled into a combination
+of CNOT and single-qubit gates as there is no way of natively implementing the $ctrl$ modifiers.  
+
+
+\subsection{Parsing}
+Once the structure needed to create an AST node visitor is understood, retrieving the information and catching syntax errors is fairly easy.
+However, there is a great number of commands that can be used in the QASM language, and each of these commands has a multitude of possible syntax errors.
+This makes the task of building an exhaustive parser very time-consuming, although not necessarily excessively difficult.
+
+
+\subsection{Phase Gate and Final Thoughts}
+The previous results are promising regarding the possibility of compiling QASM on a quantum computer. Some promise an easier approach than initially expected, registry creation for example, and some predict future tasks to be more difficult, such as translating user-defined controlled gates.
+However, there is one major problem in the lack 
+of a phase gate. Implementing this gate would not only solve the universal set problem by completing the Arbitrary rotation gates but it could also be combined 
+with the current implementation of the QASM unitary gate. Thus making user-defined gates very easy to implement since they are already defined in QASM using the QASM U gate.
+The problem is that so far no solution to implement this gate has been found using pulses with constant detuning, and there is no indication of whether a solution exists, which could seriously compromise the feasibility of this project.
+
+

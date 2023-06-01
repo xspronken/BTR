@@ -1,46 +1,52 @@
 This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-The style file: plain.bst
-Database file #1: BTR.bib
+The style file: vancouver.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: ./BTR.bib
+Warning--empty author and editor in tsaiPulselevelSchedulingQuantum2022
 You've used 15 entries,
-            2118 wiz_defined-function locations,
-            614 strings with 8005 characters,
-and the built_in function-call counts, 5929 in all, are:
-= -- 554
-> -- 366
-< -- 1
-+ -- 144
-- -- 129
-* -- 523
-:= -- 1021
-add.period$ -- 45
+            3507 wiz_defined-function locations,
+            819 strings with 9111 characters,
+and the built_in function-call counts, 33957 in all, are:
+= -- 3787
+> -- 329
+< -- 205
++ -- 162
+- -- 65
+* -- 2659
+:= -- 3660
+add.period$ -- 56
 call.type$ -- 15
-change.case$ -- 108
-chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 173
-empty$ -- 403
-format.name$ -- 129
-if$ -- 1173
+change.case$ -- 2
+chr.to.int$ -- 470
+cite$ -- 16
+duplicate$ -- 2932
+empty$ -- 3322
+format.name$ -- 71
+if$ -- 7975
 int.to.chr$ -- 0
 int.to.str$ -- 15
-missing$ -- 15
-newline$ -- 77
-num.names$ -- 32
-pop$ -- 93
+missing$ -- 171
+newline$ -- 76
+num.names$ -- 17
+pop$ -- 482
 preamble$ -- 1
-purify$ -- 94
+purify$ -- 0
 quote$ -- 0
-skip$ -- 115
+skip$ -- 340
 stack$ -- 0
-substring$ -- 370
-swap$ -- 22
-text.length$ -- 1
+substring$ -- 6234
+swap$ -- 479
+text.length$ -- 61
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 58
-warning$ -- 0
-while$ -- 53
+type$ -- 0
+warning$ -- 1
+while$ -- 172
 width$ -- 17
-write$ -- 167
+write$ -- 165
+(There was 1 warning)

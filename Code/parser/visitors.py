@@ -71,5 +71,5 @@ class RegisterVisitor(QASMVisitor):
                     data = RegisterVisitor.visit_QuantumGate(self,node, {"define gate": def_gate, 'gate expression': g, "temp_gate": temp_gate})
                     temp_gate.append(data)
 
-                    print(data)
+                    # print(data)
             def_gate.append((node.name.name, len(node.qubits),temp_gate))

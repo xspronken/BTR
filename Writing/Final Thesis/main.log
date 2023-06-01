@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.16)  23 MAY 2023 21:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.2.16)  29 MAY 2023 10:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -710,11 +710,7 @@ Package babel Info: Hyphen rules for 'australian' set to \l@english
 (babel)             (\language0). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@english
 (babel)             (\language0). Reported on input line 108.
-)) (./main.aux
-
-LaTeX Warning: Label `sec:MultiGatesTranslating' multiply defined.
-
-)
+)) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
@@ -831,264 +827,339 @@ LaTeX Info: Redefining \nameref on input line 70.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-<Images/msp-logo.jpeg, id=103, 151.56625pt x 154.5775pt>
-File: Images/msp-logo.jpeg Graphic file (type jpg)
-<use Images/msp-logo.jpeg>
-Package pdftex.def Info: Images/msp-logo.jpeg  used on input line 102.
-(pdftex.def)             Requested size: 151.56587pt x 154.5771pt.
- [1
+ (./abstract.tex) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Images/msp-logo.jpeg>] (./main.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114 \newpage
+l.108 \newpage
                [1] (./Introduction.tex
-<./Images/BlochNotGate.png, id=144, 513.92pt x 513.92pt>
+<./Images/BlochNotGate.png, id=180, 513.92pt x 513.92pt>
 File: ./Images/BlochNotGate.png Graphic file (type png)
 <use ./Images/BlochNotGate.png>
-Package pdftex.def Info: ./Images/BlochNotGate.png  used on input line 18.
+Package pdftex.def Info: ./Images/BlochNotGate.png  used on input line 19.
 (pdftex.def)             Requested size: 213.39566pt x 213.39828pt.
  [2 <./Images/BlochNotGate.png>]
-<./Images/register3D.png, id=172, 960.58875pt x 1182.4175pt>
+<./Images/register3D.png, id=205, 960.58875pt x 1182.4175pt>
 File: ./Images/register3D.png Graphic file (type png)
 <use ./Images/register3D.png>
-Package pdftex.def Info: ./Images/register3D.png  used on input line 46.
+Package pdftex.def Info: ./Images/register3D.png  used on input line 49.
 (pdftex.def)             Requested size: 284.52756pt x 350.23547pt.
 
-Underfull \hbox (badness 1112) in paragraph at lines 51--56
+Underfull \hbox (badness 1112) in paragraph at lines 54--59
 \OT1/cmr/m/n/12 tum com-put-ers such as the Neu-
  []
 
 
-Underfull \hbox (badness 4036) in paragraph at lines 51--56
+Underfull \hbox (badness 4036) in paragraph at lines 54--59
 \OT1/cmr/m/n/12 pu-ta-tions that can-not be rep-re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
 
  []
 
-[3 <./Images/register3D.png>] [4]
-<./Images/registerHardware.png, id=192, 1148.29pt x 448.67625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
+
+ []
+
+[3 <./Images/register3D.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 70--80
+
+ []
+
+<./Images/registerHardware.png, id=224, 1148.29pt x 448.67625pt>
 File: ./Images/registerHardware.png Graphic file (type png)
 <use ./Images/registerHardware.png>
-Package pdftex.def Info: ./Images/registerHardware.png  used on input line 82.
+Package pdftex.def Info: ./Images/registerHardware.png  used on input line 89.
 (pdftex.def)             Requested size: 483.69684pt x 188.99728pt.
-<./Images/CZbeams.png, id=195, 961.5925pt x 1036.87375pt>
+[4 <./Images/registerHardware.png>]
+<./Images/CZbeams.png, id=236, 961.5925pt x 1036.87375pt>
 File: ./Images/CZbeams.png Graphic file (type png)
 <use ./Images/CZbeams.png>
-Package pdftex.def Info: ./Images/CZbeams.png  used on input line 89.
-(pdftex.def)             Requested size: 170.71652pt x 184.08197pt.
+Package pdftex.def Info: ./Images/CZbeams.png  used on input line 97.
+(pdftex.def)             Requested size: 256.0748pt x 276.11505pt.
 
-Underfull \hbox (badness 1383) in paragraph at lines 94--99
-[]\OT1/cmr/m/n/12 Gates are ap-plied us-ing op-ti-cal pulses from two dif-
+Underfull \hbox (badness 1360) in paragraph at lines 102--107
+[]\OT1/cmr/m/n/12 Gates are ap-plied us-ing op-ti-cal pulses
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 94--99
-\OT1/cmr/m/n/12 fer-ent chan-nels: the Ra-man and Ry-d-berg chan-nels,
+Underfull \hbox (badness 1783) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 from two dif-fer-ent chan-nels: the Ra-
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 94--99
-\OT1/cmr/m/n/12 (global). These pulses are used to at-tain two dif-
+Underfull \hbox (badness 5939) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 tar-get a sin-gle qubit (lo-cal) or all
  []
 
 
-Underfull \hbox (badness 1147) in paragraph at lines 94--99
-\OT1/cmr/m/n/12 fer-ent ex-ci-ta-tion states from the ground state $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 g\OMS/cmsy/m/n/12 i ^^Q
+Underfull \hbox (badness 2772) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 of them (global). These pulses are
  []
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 94--99
-\OT1/cmr/m/n/12 to ac-cess the hy-per-fine state $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 h\OMS/cmsy/m/n/12 i ^^Q j\OT1/cmr/m/n/12 1\OMS/cmsy/m/n/12 i$$[]$\OT1/cmr/m/n/12 . Multi-
+Underfull \hbox (badness 1242) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 used to at-tain two dif-fer-ent ex-ci-ta-tion
  []
 
 
-Underfull \hbox (badness 3158) in paragraph at lines 94--99
-\OT1/cmr/m/n/12 qubit gates on the other hand re-quire the use of
+Underfull \hbox (badness 3019) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 states from the ground state $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 g\OMS/cmsy/m/n/12 i ^^Q
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 94--99
-\OT1/cmr/m/n/12 quan-tum co-her-ence, which is achieved us-ing a phe-
+Underfull \hbox (badness 1603) in paragraph at lines 102--107
+\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 0\OMS/cmsy/m/n/12 i$\OT1/cmr/m/n/12 . The Ra-man pulses are used in
  []
 
 
-Underfull \hbox (badness 2310) in paragraph at lines 94--99
-\OT1/cmr/m/n/12 nomenon called the Ry-d-berg block-ade: If an atom
+Underfull \hbox (badness 3417) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 sin-gle qubit gates to ac-cess the hy-
  []
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 94--99
-\OT1/cmr/m/n/12 is ex-cited to the Ry-d-berg state $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 r\OMS/cmsy/m/n/12 i$$[]$\OT1/cmr/m/n/12 (using the Ry-
+Underfull \hbox (badness 3635) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 per-fine state $\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 h\OMS/cmsy/m/n/12 i ^^Q j\OT1/cmr/m/n/12 1\OMS/cmsy/m/n/12 i$$[]$\OT1/cmr/m/n/12 . Multi-
  []
 
 
-Underfull \hbox (badness 2932) in paragraph at lines 94--99
-\OT1/cmr/m/n/12 d-berg chan-nel of the quan-tum de-vice), any nearby
+Underfull \hbox (badness 6063) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 qubit gates on the other hand re-
  []
 
 
-Underfull \hbox (badness 1067) in paragraph at lines 94--99
-\OT1/cmr/m/n/12 from achiev-ing the Ry-d-berg state$[]$. This in-ter-ac-tion
+Underfull \hbox (badness 3323) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 quire the use of quan-tum co-her-ence,
  []
 
 
-Underfull \hbox (badness 1107) in paragraph at lines 94--99
-\OT1/cmr/m/n/12 is used, for ex-am-ple in the im-ple-men-ta-tion of a CZ
+Underfull \hbox (badness 3815) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 called the Ry-d-berg block-ade: If an
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--99
-
+Underfull \hbox (badness 1400) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 atom is ex-cited to the Ry-d-berg state
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--99
-
- []
-
-[5 <./Images/registerHardware.png> <./Images/CZbeams.png>]) (./Methodology.tex
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
+Underfull \hbox (badness 1642) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 u-ated within a cer-tain ra-dius will be
  []
 
 
-Overfull \hbox (5.76157pt too wide) in paragraph at lines 18--21
-\OT1/cmr/m/n/12 1. trans-late na-tive Na-tive Uni-tary Pulser gate = Rz($\OML/cmm/m/it/12 ^^U$\OT1/cmr/m/n/12 )Rx($\OML/cmm/m/it/12 ^^R$\OT1/cmr/m/n/12 )Rz($\OML/cmm/m/it/12 ^^^$\OT1/cmr/m/n/12 ) to QASM = Rz($\OML/cmm/m/it/12 ^^U$\OT1/cmr/m/n/12 )Ry($\OML/cmm/m/it/12 ^^R$\OT1/cmr/m/n/12 )Rz($\OML/cmm/m/it/12 ^^^$\OT1/cmr/m/n/12 ) 
+Underfull \hbox (badness 6641) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 blocked from achiev-ing the Ry-d-berg
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--21
-
+Underfull \hbox (badness 1127) in paragraph at lines 102--107
+\OT1/cmr/m/n/12 am-ple in the im-ple-men-ta-tion of a CZ
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--21
+Underfull \hbox (badness 10000) in paragraph at lines 102--107
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--28
+Underfull \hbox (badness 10000) in paragraph at lines 102--107
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 48--53
+[5 <./Images/CZbeams.png>]) (./Methodology.tex [6] [7]) (./Results.tex
+<./Images/QASM_U_result.png, id=281, 569.12625pt x 205.76875pt>
+File: ./Images/QASM_U_result.png Graphic file (type png)
+<use ./Images/QASM_U_result.png>
+Package pdftex.def Info: ./Images/QASM_U_result.png  used on input line 7.
+(pdftex.def)             Requested size: 184.9429pt x 66.86777pt.
 
- []
-
-) (./ResultsDiscussion.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
+Underfull \hbox (badness 1331) in paragraph at lines 11--18
+[]\OT1/cmr/m/n/12 As seen in the fig-ure, the eigen-val-ues for the $\OMS/cmsy/m/n/12 j\OT1/cmr/m/n/12 0\OMS/cmsy/m/n/12 i$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--8
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
-
- []
-
-) (./Discussion.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--1
-
- []
-
-) (./Conclusion.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
+Underfull \hbox (badness 10000) in paragraph at lines 11--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--7
+Underfull \hbox (badness 10000) in paragraph at lines 11--18
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--7
+Underfull \hbox (badness 10000) in paragraph at lines 11--18
 
  []
 
-) (./Reflections.tex [8]) [9] (./main.bbl
-Underfull \hbox (badness 1226) in paragraph at lines 50--55
-[]\OT1/cmr/m/n/12 M Saffman.  Quan-tum com-put-ing with atomic qubits and Ry-d-berg in-ter-ac-tions:
+<Images/H.png, id=283, 569.12625pt x 252.945pt>
+File: Images/H.png Graphic file (type png)
+<use Images/H.png>
+Package pdftex.def Info: Images/H.png  used on input line 26.
+(pdftex.def)             Requested size: 227.62204pt x 101.16463pt.
+<Images/X.png, id=284, 569.12625pt x 252.945pt>
+File: Images/X.png Graphic file (type png)
+<use Images/X.png>
+Package pdftex.def Info: Images/X.png  used on input line 27.
+(pdftex.def)             Requested size: 227.62204pt x 101.16463pt.
+<Images/Y.png, id=285, 569.12625pt x 252.945pt>
+File: Images/Y.png Graphic file (type png)
+<use Images/Y.png>
+Package pdftex.def Info: Images/Y.png  used on input line 28.
+(pdftex.def)             Requested size: 227.62204pt x 101.16463pt.
+<Images/Z.png, id=286, 569.12625pt x 252.945pt>
+File: Images/Z.png Graphic file (type png)
+<use Images/Z.png>
+Package pdftex.def Info: Images/Z.png  used on input line 29.
+(pdftex.def)             Requested size: 227.62204pt x 101.16463pt.
+[8 <./Images/QASM_U_result.png>]
+<Images/Rx.png, id=294, 675.52374pt x 335.2525pt>
+File: Images/Rx.png Graphic file (type png)
+<use Images/Rx.png>
+Package pdftex.def Info: Images/Rx.png  used on input line 40.
+(pdftex.def)             Requested size: 227.62204pt x 112.96634pt.
+<Images/Rz.png, id=295, 435.6275pt x 261.97874pt>
+File: Images/Rz.png Graphic file (type png)
+<use Images/Rz.png>
+Package pdftex.def Info: Images/Rz.png  used on input line 41.
+(pdftex.def)             Requested size: 227.62204pt x 136.88531pt.
+<Images/CNOT.png, id=296, 699.61375pt x 158.5925pt>
+File: Images/CNOT.png Graphic file (type png)
+<use Images/CNOT.png>
+Package pdftex.def Info: Images/CNOT.png  used on input line 59.
+(pdftex.def)             Requested size: 426.79134pt x 96.74852pt.
+ [9 <./Images/H.png> <./Images/X.png> <./Images/Y.png> <./Images/Z.png> <./Images/Rx.png> <./Images/Rz.png>] [10 <./Images/CNOT.png>]
+<./Images/rydbergtest.png, id=314, 1785.67125pt x 2079.77pt>
+File: ./Images/rydbergtest.png Graphic file (type png)
+<use ./Images/rydbergtest.png>
+Package pdftex.def Info: ./Images/rydbergtest.png  used on input line 71.
+(pdftex.def)             Requested size: 184.9429pt x 215.38336pt.
+
+Underfull \hbox (badness 1097) in paragraph at lines 76--82
+\OT1/cmr/m/n/12 Due to prob-lems with chang-ing bases from qutrits
  []
 
-[10]) [11] (./main.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+Underfull \hbox (badness 1616) in paragraph at lines 76--82
+\OT1/cmr/m/n/12 same ini-tial state. This prob-lem was not solved
+ []
 
+
+Underfull \hbox (badness 1184) in paragraph at lines 76--82
+\OT1/cmr/m/n/12 dur-ing the time of the project and thus this test
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 76--82
+\OT1/cmr/m/n/12 can-not be con-sid-ered rig-or-ous. How-ever, there is
+ []
+
+
+Underfull \hbox (badness 1728) in paragraph at lines 76--82
+\OT1/cmr/m/n/12 ti-cal, one could as-sume that the gate works cor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--82
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--82
+
+ []
+
+<Images/parsing.png, id=315, 1390.19376pt x 211.79124pt>
+File: Images/parsing.png Graphic file (type png)
+<use Images/parsing.png>
+Package pdftex.def Info: Images/parsing.png  used on input line 106.
+(pdftex.def)             Requested size: 512.1496pt x 78.0222pt.
+
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 106--107
+ [][] 
+ []
+
+) (./Discussion.tex [11 <./Images/rydbergtest.png> <./Images/parsing.png>]) (./Reflections.tex [12]) [13] (./main.bbl) (./annex.tex [14] [15]) [16] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 95083E23CC6CDDE0E3172FA10DF8B032;3276.
+(rerunfilecheck)             Checksum: D4BA8E453C8823380BEEF245EB84991C;4462.
  ) 
 Here is how much of TeX's memory you used:
- 30686 strings out of 480171
- 623107 string characters out of 5894489
- 886641 words of memory out of 5000000
- 48086 multiletter control sequences out of 15000+600000
- 477980 words of font info for 57 fonts, out of 8000000 for 9000
+ 31155 strings out of 480171
+ 628232 string characters out of 5894489
+ 1174128 words of memory out of 5000000
+ 48412 multiletter control sequences out of 15000+600000
+ 478578 words of font info for 60 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 99i,9n,94p,984b,944s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/xavier/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (12 pages, 1366307 bytes).
+ 99i,9n,94p,985b,2269s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/xavier/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (17 pages, 5279202 bytes).
 PDF statistics:
- 326 PDF objects out of 1000 (max. 8388607)
- 267 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
- 230 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 563 PDF objects out of 1000 (max. 8388607)
+ 474 compressed objects within 5 object streams
+ 188 named destinations out of 1000 (max. 500000)
+ 331 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -8,7 +8,7 @@
  bottom=30mm,
  }
  
- \usepackage[super]{natbib}
+\usepackage[super]{natbib}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
@@ -74,10 +74,10 @@
         \vspace{3cm}
         
         \LARGE
-        \textbf{\textit{Compiling OpenQASM on a Neutral Atom Quantum Computer}}
+        \textbf{\textit{From code to optical pulses: compiling QASM on a neutral atom quantum computer}}
         
         \vspace{1cm}
-        Thesis Proposal
+        Final Thesis
         
         \vspace{0.7cm}
         \textbf{Author: Xavier Spronken (i6225376)}
@@ -91,38 +91,33 @@
         \textbf{Supervisor: Claire Blackman}
         
         \vspace{1cm}
-        \textbf{Total Word Count: 2000 \\} 
-        \normalsize
-        \text{Text:1794, Captions:178, Mathematical expressions: 28}
+        \textbf{Total Word Count: 3251 \\} 
+
+
+        \vspace{1cm}
         
-        \vfill
-        
-        \begin{figure}[H]
-            \centering
-            \includegraphics{Images/msp-logo.jpeg}
-            \label{fig:msp-logo}
-        \end{figure}
-        
-        \vspace{0.5cm}
-        \textbf{Academic Year 2022-23}
+        \input{abstract.tex}
+
         
     \end{center}
 \end{titlepage}
 
+
 \tableofcontents
 
 \newpage
-\input{Introduction}
-\input{Methodology}
-\input{ResultsDiscussion}
-\input{Discussion}
-\input{Conclusion}
-\input{Reflections}
+\input{Introduction.tex}
+\input{Methodology.tex}
+\input{Results.tex}
+\input{Discussion.tex}
+\input{Reflections.tex}
 
 
 \newpage
-\bibliographystyle{plain}
-\bibliography{BTR.bib} 
+\bibliographystyle{vancouver}
+\bibliography{./BTR.bib} 
+\appendix
+\input{Annex.tex}
 
 \end{document}
 
